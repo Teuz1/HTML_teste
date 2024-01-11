@@ -31,6 +31,49 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Adicionando as regras CSS */
+
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .message {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .user-message {
+            align-self: flex-end;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .input-container {
+            display: flex;
+        }
+
+        .input-message {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .send-button {
+            background-color: #008CBA;
+            color: white;
+            border: 1px solid #008CBA;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -43,5 +86,15 @@
     <footer>
         <p>&copy; Matheus Souza 2024</p>
     </footer>
+
+    <!-- Adicionando a estrutura -->
+    <section class="chat-container">
+        <div class="message user-message">Olá! Como posso ajudar?</div>
+        <!-- Outras mensagens -->
+        <div class="input-container">
+            <input type="text" class="input-message" placeholder="Digite sua mensagem...">
+            <button class="send-button">Enviar</button>
+        </div>
+    </section>
 </body>
 </html>

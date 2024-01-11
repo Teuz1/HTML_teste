@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicione as regras CSS para o chat */
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.message {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-message {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.send-button {
+    background-color: #008CBA;
+    color: white;
+    border: 1px solid #008CBA;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
