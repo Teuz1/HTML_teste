@@ -1,0 +1,26 @@
+/* src/components/Home.css */
+.home-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .feature {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+  }
+  
